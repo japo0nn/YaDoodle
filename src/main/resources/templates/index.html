@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">>
+	<head>
+		<link rel="stylesheet" type="text/css" href="static/css/main.css" data-th-href="@{/css/main.css}">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title th:text = "${title}"/>
+	</head>
+	<body>
+		<header>
+		<img src="/static/img/logo.png" data-th-src="@{/img/logo.png}" class="logo">
+		</header>
+		
+		<section>
+			<div class="cent">
+				<form action="/" method="post">
+				<input type="text" id="searchid" name="poisk" placeholder="Введите текст для поиска..." method="post">
+				<button type="submit" title="Поиск" class="search" onclick="onSearchButton(this)"></button>
+				</form>
+			</div>
+
+		</section>
+		
+
+		<footer>
+			<div class="bytext">
+				Created by Kuanyshbekov Erasyl & Magzymbekov Aibar.
+			</div>
+		</footer>
+		<script src="static/js/main.js" data-th-src="@{/js/main.js}"></script>
+	</body>
+</html>

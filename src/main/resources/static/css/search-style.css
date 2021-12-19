@@ -1,0 +1,85 @@
+body{
+	font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+	margin: 0;
+	align-items:center;
+	display: block;
+	padding: 5px;
+}
+
+header{
+	padding-top: 15px;
+	position: fixed;
+	background-color: white;
+	display: flex;
+	height: 40px;
+	width: 100%;
+}
+
+main{
+	margin: 50px 0;
+	padding: 30px 160px;
+}
+
+input{
+	width: 85%;
+	padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+
+h6{
+	font-style: normal;
+	margin: 3px 0;
+}
+
+p{
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.6);
+	margin: 3px 0;
+}
+
+
+button{
+	background: url(../img/lupa.png) no-repeat center;;
+	background-size: 21px 21px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 100%;
+    outline: none;
+    padding: 0;
+    pointer-events: auto;
+    position: absolute;
+    width: 10%;
+}
+
+.tab{
+	width: 45%;
+	position: relative;
+	border: none;
+	border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.logo{
+	margin: 5px;
+	width: 10%;
+	height: 80%;
+	cursor: pointer;
+}
+
+.search-title{
+	font-size: 20px;
+}
+
+.results{
+	margin: 15px 0;
+}
+
+.bytext{
+	text-align: center;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 15px;
+}
+

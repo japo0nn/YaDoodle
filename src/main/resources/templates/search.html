@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<link rel="stylesheet" type="text/css" href="static/css/search-style.css" data-th-href="@{/css/search-style.css}">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title th:text = "${title}"/>
+	</head>
+	<body>
+		<header>
+			<img src="/static/img/logo.png" data-th-src="@{/img/logo.png}" class="logo" onclick="onLogo(this)">
+			<div class="tab">
+				<form action="/search" method="post">
+				<input type="text" id="searchid" name="poisk" th:value="${inputtext}"/>
+				<button title="Поиск" class="search" onclick="onSearchButton(this)"></button>
+				</form>
+			</div>
+		</header>
+
+		<main>
+			<div th:each="el : ${searches}" class="results">
+				<a th:text="${el?.name}" th:href="'/' + ${el.id}" class="search-title"></a>
+				<h6 th:text="${el?.url}"/>
+				<p th:text="${el?.desc}"/>
+			</div>
+
+
+		</main>
+
+		<footer>
+			<div class="bytext">
+				Created by Kuanyshbekov Erasyl & Magzymbekov Aibar.
+			</div>
+		</footer>
+		<script src="static/js/search-script.js" data-th-src="@{/js/search-script.js}"></script>
+	</body>
+</html>
